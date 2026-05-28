@@ -1,7 +1,7 @@
 node_modules/
+.vercel/
 .claude/
-.agents/
-.design/
-context/
-prd-proactive-loop.md
-skills-lock.json
+~$*
+__pycache__/
+*.pyc
+.DS_Store

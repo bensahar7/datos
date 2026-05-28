@@ -4,29 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProActive Loop — Dimer Health</title>
+  <title>PriorityPulse — Datos Health</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --purple: #8054F1;
-      --purple-dark: #4037A0;
-      --dark: #1A193B;
+      --purple: #6D60F3;
+      --purple-light: #A07AFC;
+      --purple-dark: #2D1A4E;
+      --cta-purple: #6D2D90;
+      --dark: #2D1A4E;
       --red: #C0392B;
       --amber: #D97706;
-      --green: #A1E974;
-      --lavender: #F3F1FD;
-      --border: #E5E3F0;
-      --text: #1A193B;
+      --green: #34A853;
+      --lavender: #F7F5FF;
+      --border: #E5E0F0;
+      --text: #2D1A4E;
       --text-2: #4A4763;
       --text-3: #9492A8;
     }
@@ -85,7 +81,7 @@
     }
 
     .header-left h1 span {
-      background: linear-gradient(135deg, #8054F1, #4037A0);
+      background: linear-gradient(135deg, #6D60F3, #A07AFC);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -97,22 +93,6 @@
       margin-top: 8px;
       line-height: 1.5;
       max-width: 480px;
-    }
-
-    .header-meta {
-      text-align: right;
-      flex-shrink: 0;
-    }
-
-    .meta-line {
-      font-size: 12px;
-      color: var(--text-3);
-      line-height: 1.8;
-    }
-
-    .meta-line strong {
-      color: var(--text-2);
-      font-weight: 600;
     }
 
     /* ── HERO STATS ── */
@@ -143,9 +123,7 @@
       line-height: 1;
     }
 
-    .stat-card.alert .stat-number {
-      color: var(--red);
-    }
+    .stat-card.alert .stat-number { color: var(--red); }
 
     .stat-label {
       font-size: 12px;
@@ -170,17 +148,8 @@
       margin-bottom: 28px;
     }
 
-    .three-col {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-
     /* ── SECTION ── */
-    .section {
-      margin-bottom: 28px;
-    }
+    .section { margin-bottom: 28px; }
 
     .section-label {
       font-size: 10px;
@@ -253,7 +222,7 @@
     }
 
     .feature-card.purple-card .feature-icon {
-      background: rgba(255, 255, 255, .1);
+      background: rgba(255,255,255,.1);
     }
 
     .feature-card h3 {
@@ -264,9 +233,7 @@
       margin-bottom: 6px;
     }
 
-    .feature-card.purple-card h3 {
-      color: white;
-    }
+    .feature-card.purple-card h3 { color: white; }
 
     .feature-card p {
       font-size: 12.5px;
@@ -274,9 +241,7 @@
       line-height: 1.55;
     }
 
-    .feature-card.purple-card p {
-      color: rgba(255, 255, 255, .65);
-    }
+    .feature-card.purple-card p { color: rgba(255,255,255,.65); }
 
     /* ── LOOP DIAGRAM ── */
     .loop-diagram {
@@ -362,9 +327,7 @@
       vertical-align: top;
     }
 
-    .metrics-table tr:last-child td {
-      border-bottom: none;
-    }
+    .metrics-table tr:last-child td { border-bottom: none; }
 
     .metrics-table td:first-child {
       font-weight: 600;
@@ -375,38 +338,6 @@
     .target-val {
       font-weight: 700;
       color: var(--purple);
-    }
-
-    /* ── BADGES ── */
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 9px;
-      border-radius: 9999px;
-      letter-spacing: .03em;
-    }
-
-    .badge-red {
-      background: #FEF2F2;
-      color: var(--red);
-    }
-
-    .badge-purple {
-      background: var(--lavender);
-      color: var(--purple);
-    }
-
-    .badge-green {
-      background: #F0FDF4;
-      color: #2D6A4F;
-    }
-
-    .badge-amber {
-      background: #FFFBEB;
-      color: var(--amber);
     }
 
     /* ── QUOTE ── */
@@ -449,41 +380,51 @@
       line-height: 1.6;
     }
 
-    .footer-left strong {
-      color: var(--text-2);
-      font-weight: 600;
-    }
-
     .demo-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: var(--dark);
+      background: var(--cta-purple);
       color: white;
       font-size: 12px;
       font-weight: 600;
       padding: 10px 18px;
-      border-radius: 8px;
+      border-radius: 30px;
       text-decoration: none;
       letter-spacing: .01em;
       transition: background .15s;
     }
 
-    .demo-link:hover {
-      background: #2D2B50;
-    }
+    .demo-link:hover { background: #5A2278; }
 
     /* ── PRINT ── */
     @media print {
-      body {
-        padding: 24px 32px;
-        background: white;
-        font-size: 13px;
-      }
-
-      .demo-link {
-        display: none;
-      }
+      @page { size: A4; margin: 16mm 18mm; }
+      html, body { font-size: 11px; background: white; padding: 0; max-width: 100%; }
+      .header { margin-bottom: 18px; padding-bottom: 14px; }
+      .header-left h1 { font-size: 24px; }
+      .header-left .subtitle { font-size: 12px; }
+      .logo-row { margin-bottom: 10px; }
+      .hero-stats { gap: 10px; margin-bottom: 16px; }
+      .stat-number { font-size: 22px; }
+      .stat-card { padding: 12px 14px; }
+      .insight-box { padding: 10px 14px; margin-bottom: 16px; }
+      .insight-box p { font-size: 11.5px; }
+      .two-col { gap: 14px; margin-bottom: 16px; }
+      .section h2 { font-size: 13px; }
+      .section p { font-size: 11px; }
+      .loop-diagram { padding: 14px 16px; margin-bottom: 16px; }
+      .step-text { font-size: 10px; }
+      .step-dot { width: 20px; height: 20px; font-size: 9px; }
+      .step-arrow { width: 16px; }
+      .feature-card { padding: 12px; }
+      .feature-card h3 { font-size: 11.5px; }
+      .feature-card p { font-size: 10.5px; }
+      .feature-icon { width: 26px; height: 26px; margin-bottom: 8px; }
+      .quote-block { padding: 12px 14px; margin-bottom: 16px; }
+      .quote-text { font-size: 11.5px; }
+      .footer { padding-top: 14px; }
+      .demo-link { display: none; }
     }
   </style>
 </head>
@@ -494,65 +435,54 @@
   <header class="header">
     <div class="header-left">
       <div class="logo-row">
-        <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="var(--purple)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="19,5 27,10 27,20 19,25 11,20 11,10" />
-            <line x1="19" y1="5" x2="14" y2="1" />
-            <line x1="19" y1="5" x2="24" y2="1" />
-            <line x1="27" y1="10" x2="32" y2="7" />
-            <line x1="19" y1="25" x2="14" y2="29" />
-            <line x1="19" y1="25" x2="24" y2="29" />
-            <line x1="11" y1="20" x2="6" y2="23" />
-          </g>
+        <svg width="34" height="34" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.0203 49.2346V49.9234C27.0203 52.5632 24.8801 54.7033 22.2402 54.7033H17.5672V18.1658H22.2402C24.8801 18.1658 27.0203 20.3059 27.0203 22.9458V23.6145C27.0207 16.1684 30.5445 9.55942 36 5.31645C32.0719 2.26147 27.1496 0.424561 21.7881 0.424561H0V72.4246H21.7881C27.1496 72.4246 32.0719 70.5875 36 67.5326C30.5445 63.2895 27.0207 56.6807 27.0203 49.2346Z" fill="#A07AFC"/>
+          <path d="M50.2117 0.424561C44.8504 0.424561 39.9277 2.26147 36 5.31645C41.4539 9.55845 44.9771 16.1655 44.9793 23.6095V22.9258C44.9793 20.2859 47.1193 18.1458 49.7594 18.1458H54.4322V54.6833H49.7594C47.1193 54.6833 44.9793 52.5433 44.9793 49.9035V49.2396C44.9771 56.6836 41.4539 63.2905 36 67.5326C39.9277 70.5875 44.8504 72.4246 50.2117 72.4246H72V0.424561H50.2117Z" fill="#B6BDFF"/>
+          <path d="M44.9796 31.6988V23.6162C44.9796 16.1693 41.4558 9.55973 36 5.31647C30.5441 9.55973 27.0203 16.1693 27.0203 23.6162V31.6988H44.9796Z" fill="#6D60F3"/>
+          <path d="M27.0203 41.1517V49.233C27.0203 56.6799 30.5441 63.2892 36 67.5326C41.4558 63.2892 44.9796 56.6799 44.9796 49.233V41.1517H27.0203Z" fill="#6D60F3"/>
         </svg>
-        <span class="logo-text">DIMER<span class="logo-sub"> HEALTH</span></span>
+        <span class="logo-text">DATOS<span class="logo-sub"> HEALTH</span></span>
       </div>
-      <h1>ProActive <span>Loop</span></h1>
-      <p class="subtitle">A closed-loop signal system that makes Dimer's post-discharge model proactive end-to-end — for
-        patients and Transitionists alike.</p>
+      <h1>Priority<span>Pulse</span></h1>
+      <p class="subtitle">A clinician triage layer that turns Datos' Care Team Dashboard from a data viewer into a prioritized action queue — so care teams know who needs them first.</p>
     </div>
-    <div class="header-meta">
   </header>
 
   <!-- HERO STATS -->
   <div class="hero-stats">
     <div class="stat-card alert">
-      <div class="stat-number">10%</div>
-      <div class="stat-label">of patients use the digital layer.<br>5,883 episodes. 500 AiME chats.</div>
-      <div class="stat-source">Dimer internal · Apr 2026</div>
+      <div class="stat-number">60%+</div>
+      <div class="stat-label">of clinicians report EHR/workflow burden as a major driver of burnout</div>
+      <div class="stat-source">Industry research · 2024</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number">29 days</div>
-      <div class="stat-label">Average wait for first follow-up appointment after discharge</div>
-      <div class="stat-source">Industry average</div>
+      <div class="stat-number">#1</div>
+      <div class="stat-label">Alert fatigue is the top clinician complaint across all Hospital at Home programs</div>
+      <div class="stat-source">AHRQ · JMIR · Springer</div>
     </div>
     <div class="stat-card">
       <div class="stat-number">$15K</div>
-      <div class="stat-label">Average cost of a preventable readmission — the metric clients pay to reduce</div>
+      <div class="stat-label">Average cost of a preventable readmission — the outcome HiTH programs exist to reduce</div>
       <div class="stat-source">US Healthcare · CMS data</div>
     </div>
   </div>
 
   <!-- THE INSIGHT -->
   <div class="insight-box">
-    <p>Dimer's clinical model is already proactive — admins call within 12 hours, Transitionists follow up within 24.
-      But between those calls, <em>Dimer is blind</em>. If a patient doesn't open the app, there is zero digital signal
-      about how they're doing. The only reason 90% of patients never use AiME: it waits for them to show up first.</p>
+    <p>Datos automates the patient workflow brilliantly — reminders, education, questionnaires, escalation. But the Care Team Dashboard still shows <em>data and alerts, not priorities</em>. Clinicians see trends and notifications. They don't see: "of your 40 home patients, here are the 3 who need you right now and why." The patient side is automated. <em>The clinician side is still manual.</em></p>
   </div>
 
   <!-- THE GAP + THE FIX -->
   <div class="two-col section">
     <div>
       <div class="section-label">The Problem</div>
-      <h2>A proactive clinical model on a reactive digital foundation</h2>
+      <h2>Automated patient workflows, manual clinician triage</h2>
+      <p>The Care Team Dashboard shows data trends and fires threshold-based alerts. Every out-of-range reading triggers a notification. Clinicians must review every alert, every patient, every morning — and decide for themselves who matters most. More patients on the platform means more alerts, not more clarity.</p>
     </div>
     <div>
       <div class="section-label">The Solution</div>
-      <h2>Two surfaces. One closed loop.</h2>
-      <p>ProActive Loop pairs a frictionless daily patient check-in with a Cura-powered Transitionist dashboard. Instead
-        of waiting for patients to open the app, AiME initiates a daily push notification — one tap to confirm "I'm
-        okay." On the clinician side, silence and risk score combine into a prioritized queue: one screen that answers
-        "who do I call first this morning?" in under 30 seconds.</p>
+      <h2>One queue. One question answered.</h2>
+      <p>PriorityPulse adds a triage intelligence layer on top of the existing Care Team Dashboard. It synthesizes vitals trends, PROM responses, medication adherence, and silence patterns into a single composite score — then ranks patients into a prioritized morning queue. One screen. "Who do I call first?" answered in under 30 seconds.</p>
     </div>
   </div>
 
@@ -562,110 +492,132 @@
     <div class="loop-steps">
       <div class="loop-step">
         <div class="step-dot">1</div>
-        <span class="step-text">Patient receives daily personalized push notification</span>
+        <span class="step-text">CareApp prompts daily check-in</span>
       </div>
       <div class="step-arrow">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
-          <path d="M3 8h10M9 4l4 4-4 4" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </div>
       <div class="loop-step">
         <div class="step-dot">2</div>
-        <span class="step-text">Taps "I'm okay" or "Concern"</span>
+        <span class="step-text">Patient submits vitals + PROM (or stays silent)</span>
       </div>
       <div class="step-arrow">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
-          <path d="M3 8h10M9 4l4 4-4 4" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </div>
       <div class="loop-step">
         <div class="step-dot">3</div>
-        <span class="step-text">Signal logged · Cura re-scores</span>
+        <span class="step-text">Triage engine scores composite risk</span>
       </div>
       <div class="step-arrow">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
-          <path d="M3 8h10M9 4l4 4-4 4" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </div>
       <div class="loop-step">
         <div class="step-dot">4</div>
         <span class="step-text">Dashboard re-ranks queue</span>
       </div>
       <div class="step-arrow">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
-          <path d="M3 8h10M9 4l4 4-4 4" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </div>
       <div class="loop-step">
         <div class="step-dot">5</div>
-        <span class="step-text">Transitionist calls the right patient first</span>
+        <span class="step-text">Care team acts on the right patient first</span>
       </div>
       <div class="step-arrow">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round">
-          <path d="M3 8h10M9 4l4 4-4 4" />
-        </svg>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </div>
       <div class="loop-step">
-        <div class="step-dot">✓</div>
+        <div class="step-dot">&#10003;</div>
         <span class="step-text">Earlier intervention · fewer readmissions</span>
       </div>
     </div>
   </div>
 
-  <!-- TWO FEATURES -->
+  <!-- TWO SURFACES -->
   <div class="section-label">The two surfaces</div>
   <div class="two-col" style="margin-bottom:28px">
     <div class="feature-card">
       <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#8054F1" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round">
-          <rect x="4" y="1" width="10" height="16" rx="2" />
-          <path d="M7 14h4" />
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#6D60F3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="1" width="10" height="16" rx="2"/>
+          <path d="M7 14h4"/>
         </svg>
       </div>
-      <h3>Patient: Daily Check-In</h3>
-      <p>A personalized push notification between 8–10am — not a generic reminder.</p>
+      <h3>Patient: Enhanced CareApp Check-In</h3>
+      <p>A small upgrade to the existing CareApp — one personalized daily prompt that references yesterday's data. Silence is now a tracked signal, not a void. Built on what already ships.</p>
     </div>
     <div class="feature-card purple-card">
       <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="white" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round">
-          <rect x="1" y="1" width="16" height="16" rx="2" />
-          <path d="M1 6h16M6 6v10" />
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="1" width="16" height="16" rx="2"/>
+          <path d="M1 6h16M6 6v10"/>
         </svg>
       </div>
-      <h3>Transitionist: Priority Dashboard</h3>
-      <p>A Cura-powered work queue that answers one question every morning: who do I call first? Patients ranked by
-        composite risk score + silence duration.</p>
+      <h3>Care Team: Priority Dashboard</h3>
+      <p>A new layer on the Care Team Dashboard that answers one question every morning: who needs me first? Patients ranked by composite risk score + silence duration.</p>
     </div>
   </div>
 
-  <!-- PATIENT VOICE -->
+  <!-- MVP SCOPE -->
+  <div class="section">
+    <div class="section-label">MVP scope</div>
+    <h2>What ships in v1 — built on what Datos already has</h2>
+    <p style="margin-bottom:14px">PriorityPulse isn't a rebuild. The CareApp, the data pipeline, and the Care Team Dashboard already exist. v1 wraps them in a thin triage and prioritization layer that any HiTH program can turn on through the Design Studio.</p>
+  </div>
+
+  <table class="metrics-table">
+    <thead>
+      <tr>
+        <th>v1 capability</th>
+        <th>Already exists?</th>
+        <th>What we add</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Daily CareApp check-in prompt</td>
+        <td>CareApp ships today</td>
+        <td class="target-val">One-tap "okay / concern" + silence as a tracked signal</td>
+      </tr>
+      <tr>
+        <td>Composite triage score</td>
+        <td>Threshold alerts exist; no composite score</td>
+        <td class="target-val">Weighted score: vitals + PROM + adherence + silence</td>
+      </tr>
+      <tr>
+        <td>Prioritized morning queue</td>
+        <td>Dashboard shows data trends</td>
+        <td class="target-val">Ranked queue view sorted by composite score</td>
+      </tr>
+      <tr>
+        <td>Design Studio configuration</td>
+        <td>No-code builder ships today</td>
+        <td class="target-val">New components for score weighting + silence thresholds</td>
+      </tr>
+      <tr>
+        <td>EMR / device integrations</td>
+        <td>Already in place</td>
+        <td class="target-val">No new integration work in v1</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- QUOTE -->
   <div class="quote-block">
-    <p class="quote-text">"I'm a 72-year-old male that lives alone. Dimer Health has been a real asset in helping me
-      recover. They followed up with me every day no matter what time."</p>
-    <span class="quote-attr">Actual patient review — Google · 2026</span>
+    <p class="quote-text">"I'm drowning in alerts that don't mean anything. I need to know which of my patients actually needs me right now — not see every number that crossed a threshold overnight."</p>
+    <span class="quote-attr">Composite clinician voice — AHRQ, JMIR, Healthcare IT News research</span>
   </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-left">
-    </div>
-    <a class="demo-link" href="https://dimer-prototype.vercel.app/" target="_blank">
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"
-        stroke-linecap="round" stroke-linejoin="round">
-        <rect x="1" y="1" width="12" height="12" rx="2" />
-        <path d="M1 5h12M5 5v7" />
+    <div class="footer-left"></div>
+    <a class="demo-link" href="index.html">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="1" width="12" height="12" rx="2"/>
+        <path d="M1 5h12M5 5v7"/>
       </svg>
-      View Live Prototype →
+      View Live Prototype &rarr;
     </a>
   </footer>
 
 </body>
-
 </html>
