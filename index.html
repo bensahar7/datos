@@ -940,10 +940,10 @@ html, body {
       </button>
       <div class="nav-user">
         <div class="nav-user-info">
-          <div class="nav-user-name">Dr. Rachel Levy</div>
+          <div class="nav-user-name">Yael Belkin</div>
           <div class="nav-user-role">Care Team Lead</div>
         </div>
-        <div class="nav-avatar" aria-hidden="true">RL</div>
+        <div class="nav-avatar" aria-hidden="true">YB</div>
       </div>
     </div>
   </nav>
@@ -1022,8 +1022,8 @@ html, body {
 const patients = [
   {
     id: 1,
-    name: 'Moshe Katz',
-    initials: 'MK',
+    name: 'Robert Mitchell',
+    initials: 'RM',
     age: 74,
     program: 'Cardiac Rehabilitation',
     week: 3,
@@ -1041,12 +1041,12 @@ const patients = [
       { label: 'PROM score', pct: 40, level: 'low' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 24', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 24', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   },
   {
     id: 2,
-    name: 'Sarah Abramov',
-    initials: 'SA',
+    name: 'Patricia Carter',
+    initials: 'PC',
     age: 68,
     program: 'CHF Care',
     week: 6,
@@ -1064,12 +1064,12 @@ const patients = [
       { label: 'PROM score', pct: 60, level: 'medium' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 25', type: 'Phone call', clinician: 'Nurse Dina', initials: 'DN' }
+    lastContact: { date: 'May 25', type: 'Phone call', clinician: 'Nurse Hayes', initials: 'NH' }
   },
   {
     id: 3,
-    name: 'David Rosen',
-    initials: 'DR',
+    name: 'James Thompson',
+    initials: 'JT',
     age: 71,
     program: 'Post-Surgical HiTH',
     week: 1,
@@ -1087,12 +1087,12 @@ const patients = [
       { label: 'PROM score', pct: 85, level: 'high' }
     ],
     promResponse: 'The area around my stitches looks redder than yesterday and feels warm to the touch. My temperature was 38.1 this morning.',
-    lastContact: { date: 'May 26', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 26', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   },
   {
     id: 4,
-    name: 'Yael Cohen',
-    initials: 'YC',
+    name: 'Eleanor Bishop',
+    initials: 'EB',
     age: 82,
     program: 'Hypertension Monitoring',
     week: 8,
@@ -1110,12 +1110,12 @@ const patients = [
       { label: 'PROM score', pct: 45, level: 'medium' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 25', type: 'Phone call', clinician: 'Nurse Dina', initials: 'DN' }
+    lastContact: { date: 'May 25', type: 'Phone call', clinician: 'Nurse Hayes', initials: 'NH' }
   },
   {
     id: 5,
-    name: 'Eli Mizrahi',
-    initials: 'EM',
+    name: 'Hayden Walsh',
+    initials: 'HW',
     age: 65,
     program: 'Cardiac Rehabilitation',
     week: 5,
@@ -1133,12 +1133,12 @@ const patients = [
       { label: 'PROM score', pct: 55, level: 'medium' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 22', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 22', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   },
   {
     id: 6,
-    name: 'Ruth Goldstein',
-    initials: 'RG',
+    name: 'Imogen Hayes',
+    initials: 'IH',
     age: 59,
     program: 'Oncology Care',
     week: 4,
@@ -1156,12 +1156,12 @@ const patients = [
       { label: 'PROM score', pct: 70, level: 'medium' }
     ],
     promResponse: 'Nausea has been worse since yesterday. I managed to eat a little in the morning but couldn\'t keep lunch down. Feeling very tired.',
-    lastContact: { date: 'May 23', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 23', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   },
   {
     id: 7,
-    name: 'Avi Peretz',
-    initials: 'AP',
+    name: 'Liam O\'Sullivan',
+    initials: 'LO',
     age: 56,
     program: 'Diabetes Management',
     week: 10,
@@ -1179,12 +1179,12 @@ const patients = [
       { label: 'PROM score', pct: 30, level: 'low' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 20', type: 'Phone call', clinician: 'Nurse Dina', initials: 'DN' }
+    lastContact: { date: 'May 20', type: 'Phone call', clinician: 'Nurse Hayes', initials: 'NH' }
   },
   {
     id: 8,
-    name: 'Tamar Ben-David',
-    initials: 'TB',
+    name: 'Margaret Reeves',
+    initials: 'MR',
     age: 34,
     program: 'High-Risk Pregnancy',
     week: 2,
@@ -1202,12 +1202,12 @@ const patients = [
       { label: 'PROM score', pct: 20, level: 'low' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 24', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 24', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   },
   {
     id: 9,
-    name: 'Haim Shapira',
-    initials: 'HS',
+    name: 'Charles MacGregor',
+    initials: 'CM',
     age: 63,
     program: 'Pulmonary Rehabilitation',
     week: 7,
@@ -1225,12 +1225,12 @@ const patients = [
       { label: 'PROM score', pct: 10, level: 'low' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 21', type: 'Phone call', clinician: 'Nurse Dina', initials: 'DN' }
+    lastContact: { date: 'May 21', type: 'Phone call', clinician: 'Nurse Hayes', initials: 'NH' }
   },
   {
     id: 10,
-    name: 'Miriam Levi',
-    initials: 'ML',
+    name: 'Beatrice Nguyen',
+    initials: 'BN',
     age: 70,
     program: 'Cardiac Rehabilitation',
     week: 11,
@@ -1248,7 +1248,7 @@ const patients = [
       { label: 'PROM score', pct: 5, level: 'low' }
     ],
     promResponse: null,
-    lastContact: { date: 'May 19', type: 'Virtual visit', clinician: 'Dr. Levy', initials: 'RL' }
+    lastContact: { date: 'May 19', type: 'Virtual visit', clinician: 'Yael Belkin', initials: 'YB' }
   }
 ];
 
